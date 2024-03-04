@@ -1,0 +1,82 @@
+* {
+  font-family: Droid sans-serif;
+}
+
+.fifth-sem-topics {
+  margin-top: 5rem;
+  height: 380px;
+  background-image: url("sajiloCSIT/Resources/images/background3.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.display-syllabus {
+  background-image: url("../Resources/images/background4.jpg");
+}
+
+.semester,
+.syllabus {
+  color: #1f7a8c;
+}
+
+.display-syllabus {
+  font-size: smaller;
+  padding: 0.3rem 3rem;
+  object-fit: cover;
+}
+
+.fifth {
+  color: #022b3a;
+}
+
+.fifth-sem {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.sub-web-tech,
+.sub-code-318,
+.syllabus {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.sub-code-318 > b,
+.syllabus > b {
+  font-weight: 700;
+}
+
+.research > img {
+  width: 314px;
+  height: 197px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.this-course-covers {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.table-div-content {
+  text-align: justify;
+  padding: 8px 0 0 4px;
+}
+
+.syllabus-table>td{
+ 
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .fifth-sem-topics {
+    flex-direction: column;
+    margin: 5px;
+    font-size: small;
+  }
+}

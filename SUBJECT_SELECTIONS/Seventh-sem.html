@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/header_footer.css" />
+    <script src="../style.js"></script>
+    <link rel="stylesheet" href="./subject-selection-syllabus.css" />
+    <title>Seventh Sem</title>
+  </head>
+  <body>
+
+      <!-- The header of the page -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+  </script>
+  <div id="header"></div>
+
+  <!-- tHE MAIN BODY -->
+  <!--Remaining section-->
+      <!-- Main Portion of the Page -->
+      <main>
+        <article>
+          <section class="semester-page-top">
+            <!-- headings -->
+            <div><span >Seventh</span> <span>Semester</span></div>
+            <div>
+              <img class="grades"
+                src="../Resources/svg/grades.svg"
+                alt="students-pic"
+              />
+            </div>
+          </section>
+         <!-- Section for selecting Subjects -->
+          <section class="semester-page-main">
+            <div>
+              <img class="analysis"
+                src="../Resources/svg/analysis.svg"
+                alt="analyze-pic"
+              />
+            </div>
+        <!-- Subject Options -->
+            <div class="choose-subjects">
+              <div> <span class="choose">Choose</span> <span class="subject">Subject</span> </div>
+              <ul>
+                  <li><a href="/HTML/7_sem/ajava.html">Advanced Java Programming</a> </li>
+                  <li><a href="/HTML/7_sem/DataWarehousing.html">Data Warehousing and Data Mining</a> </li>
+                  <li><a href="/HTML/7_sem/PrincipleofManagement.html">Principles of Management</a></li>
+                  <li><a href="/HTML/7_sem/pw.html">Project Work</a> </li>
+              </ul>
+               <!-- Botton for elective subjects -->
+              <button class="electives" onclick="dropdown()">
+                Electives
+                <img
+                  class="drop-down"
+                  src="../Resources/svg/drop-arrow.svg"
+                  alt=""
+                />
+              </button>
+                <!-- Subjects shown after clicking dropdown menu -->
+              <div id="dropDownDisplay">
+                <ul>
+                  <li> <a href="/HTML/7_sem/ir.html"> Information Retrieval</a> </li>
+                  <li> <a href="/HTML/7_sem/dba.html"> Database Administrator</a> </li>
+                  <li> <a href="/HTML/7_sem/SoftwareProjectManagement.html"> Software Project Management </a></li>
+                  <li> <a href="/HTML/7_sem/Network Security.html"> Network Security</a></li>
+                  <li> <a href="/HTML/7_sem/nsa.html"> Digital System Design</a> </li>
+                  <li> <a href="/HTML/7_sem/InternationalMarketing.html"> International Marketing</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </article>
+      </main>
+  <!-- fOOTER SECTION -->
+  <div id="footer"></div>
+  <script> 
+  $(function(){
+    $("#header").load("../../HTML/hf/header_sem_select.html"); 
+        $("#footer").load("../../HTML/hf/footer_sem_select.html"); 
+  });
+  </script> 
+      
+    
+
+    
+ 
+  </body>
+</html>

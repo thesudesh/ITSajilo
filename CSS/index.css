@@ -1,0 +1,363 @@
+/* CSS for the homepage */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&&Oxanium&display=swap');
+
+/* Variables for the whole css */
+:root{
+    /* COLORS PALATTE*/
+    --BOX_SHADOW:3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+    --COLOR1:#022B3A;
+    --COLOR2:#1F7A8C;
+    --COLOR3:#BFDBF7;
+    --COLOR4:#E1E5F2;
+    --COLOR5: #FFFFFF;
+    --HOVER_COLOR:hsl(210, 78%, 86%,0.5);
+    --HEADING_FONT:'Montserrat', sans-serif;
+    --BODY_FONT:'Source Sans Pro', sans-serif;
+    --FONT_SIZE_X:1em;
+    --FONT_SIZE_XL:2em;
+    --FONT_SIZE_XXL:3em;
+    --PADDING:0.3em;
+}
+
+/* Overriding the defaults */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--BODY_FONT);
+}
+h1, h2, h3,h4, h5, h6{
+    font-family: var(--HEADING_FONT);
+}
+
+
+/* Change the text color to theme */
+/* For single properties  */
+.theme_color{
+    color:var(--COLOR2);
+}
+
+/* CSS for the banner image */
+.bannerImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+.bannerImage img{
+    width: 80%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* CSS for the upper part of the page 
+It displays the name and the image on the top of index page */
+.first_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background:url("/Resources/images/main_landingmain_landing.jpg");
+    background-size: cover;
+    align-items: center;
+    justify-items: center;
+    gap:1 rem;
+    margin: 7em 0;
+}
+
+.first_row h1, .second_row h1{
+    font-size: 3rem;
+    margin:0.3em 0;
+}
+.first_row h2{
+    font-size: 2rem;
+    opacity: 0.8;
+    margin:0.3em 0;
+}
+.first_row p{
+    font-size: 1.2rem;
+    text-align: justify;
+    opacity: 0.7;
+    width: 50ch; /*Specifies how much line the character should be*/
+    margin:0.3em 0;
+}
+.first_row .desktop_image img{
+    width: 75%;
+    height: auto;
+    margin-right: 10em;
+}
+/* Image for mobile
+.first_row .mobile_image img{
+    display: none;
+} */
+.first_row br{
+    display: none;
+}
+.first_row button{
+    background-color: var(--COLOR1);
+    border:none;
+    border-radius: 1em;
+    color:#fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.3em 1em;
+    width: 40%;
+    margin-top: 1em;
+}
+.first_row button:hover{
+    background-color: hsl(190, 64%, 34%,0.9);
+} 
+
+/* CSS for the second part of the main landing page */
+/* The image on the right side of the main page */
+
+.second_row{
+    background-image: url("/Resources/images/main_landingmain_landing.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+
+/* The menu selcetion */
+.field_selection img{
+    width: 35%;
+}
+.field_selection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    align-items: center;
+    justify-content: center;
+    gap:2em;
+    margin-right: 0.8em;
+    text-align: center;
+    
+}
+.field_selection figure{
+    background-color: #fff;
+    box-shadow: var(--BOX_SHADOW);
+    padding: 2em;
+    border-radius: 10px;
+
+}
+.field_selection a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* CSS for the coming soon tab */
+.middle_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background: url("/Resources/images/main_landing_color.jpg");
+    padding: 1em;
+}
+.middle_row img{
+    width: 50%;
+    margin: 3em;
+}
+.middle_row h1{
+    font-size: var(--FONT_SIZE_XL);
+}
+.middle_row ul{
+    list-style-type: square;
+}
+.middle_row ul li{
+    padding: 0.5em;
+}
+.quote{
+    font-family: 'Oxanium', cursive;
+    text-align: center;
+}
+.middle_row button{
+    background-color: var(--COLOR1);
+    border:none;
+    border-radius: 0.5em;
+    color:#fff;
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 0.3em 1em;
+    width: fit-content;
+    margin-top: 1em;
+}
+.middle_row button:hover{
+    background-color: hsl(190, 64%, 34%,0.9);
+} 
+.middle_row a{
+    text-decoration: none;
+    color:white;
+}
+
+/* THe contact forum section` */
+.contact_forum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background: url("../Resources/svg/bg_contact_2.svg");
+    background-size: cover;
+}
+.contact_forum form label,
+.contact_forum form input
+{
+    display: block;
+    font-family: inherit;
+    padding:0.2rem;
+    width: 80vh;
+    font-weight: bold;
+    margin:0.2rem;
+    
+}
+.contact_forum form input{
+    border: 1.5px solid #022B3A;
+    height: 02rem;
+    border-radius: 0.5rem;
+}
+.contact_forum .submit_button{
+    width: fit-content;
+    background-color: var(--COLOR1);
+    border:none;
+    border-radius: 0.5em;
+    color:#fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.3em 1em;
+    width: 40%;
+    margin-top: 1em;
+    
+}
+.contact_forum .submit_button:hover{
+    background-color: hsl(190, 64%, 34%,0.9);
+}
+
+
+@media screen and (max-width:1320px){
+    /* THe second row containing the selection part */
+    .second_row{
+        grid-template-columns: 1fr;
+        margin:5rem;
+    }
+    .second_row_img img{
+       display: none;
+    }
+
+
+    /* The card displaying the image and the logo */
+ 
+    .field_selection img{
+        width: 30%;
+    };
+}
+@media screen and (max-width:1100px){
+
+}
+
+/* FOr mobile devices  */
+@media screen and (max-width: 900px) {
+
+    /* Header */
+
+
+    /* For the main body */
+    .first_row{
+        grid-template-columns: 1fr;
+    }
+    .first_row br{
+        display: inline;
+    }
+    .first_row p{
+        width: 40ch;
+    }
+    .desktop_image{
+        display: none;
+    }
+    .mobile_image img{
+        display: block;
+       height: auto;
+       width: 50%;
+       margin: 2em;
+       
+    }
+   
+
+    /* Second Row */
+ 
+    .second_row_img img{
+        display:none;
+    }
+    .second_row{
+        grid-template-columns: 1fr;
+        margin: 0;
+        margin-bottom: 2em;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .field_selection{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .second_row h1{
+        font-size: var(--FONT_SIZE_XL);
+    }
+    .field_selection figure{
+        width: 10em;
+        margin-left: 10vh;
+    }
+
+    .middle_row{
+        gap:1em;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .middle_row img{
+        width: 60%;
+        margin-right: 1em;
+    }
+    .middle_row h1{
+        padding-bottom:0.5em;
+    }
+    .middle_row h3{
+        font-size: var(--FONT_SIZE_X);
+
+    }  
+    .middle_row aside{
+        margin-right: 1em;
+    } 
+
+    /* New css; */
+    .second_row{
+        margin: 1rem;
+    }
+
+    .middle_row{
+        grid-template-columns: 1fr;
+    }
+    .middle_row img{
+        display: none;
+        
+    }
+
+    /* The css for the contact .contact_forum; */
+    .contact_forum{
+        margin: 0;
+        background: whitesmoke;
+    }
+
+    .contact_forum form label,
+    .contact_forum form input{
+        
+        width: 40vh;
+       
+    }
+   
+
+}
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./subject-selection-syllabus.css" />
+    <link rel="stylesheet" href="../CSS/header_footer.css" />
+    <script src="../style.js"></script>
+    <title>First Sem</title>
+  </head>
+  <body>
+    
+  <!-- The header of the page -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+  </script>
+  <div id="header"></div>
+
+  <!-- tHE MAIN BODY -->
+  <!--Remaining section-->
+  <!-- Main Portion of the Page -->
+  <main>
+    <article>
+      <!-- headings -->
+      <section class="semester-page-top">
+        <div><span >First</span> <span>Semester</span></div>
+        <div>
+          <img class="grades"
+            src="../Resources/svg/grades.svg"
+            alt="students-pic"
+          />
+        </div>
+      </section>
+<!-- Section for selecting Subjects -->
+      <section class="semester-page-main">
+        <div>
+          <img class="analysis"
+            src="../Resources/svg/analysis.svg"
+            alt="analyze-pic"
+          />
+        </div>
+<!-- Subject Options -->
+        <div class="choose-subjects">
+          <div> <span class="choose">Choose</span> <span class="subject">Subject</span> </div>
+          <!-- Compulsory subjects -->
+          <ul>
+              <li> <a href="/HTML/1_sem/cp.html"> C Programming</a></li>
+              <li> <a href="/HTML/1_sem/iit.html"> Introduction to Information Technology</a></li>
+              <li> <a href="/HTML/1_sem/dl.html"> Digital Logic</a></li>
+              <li> <a href="/HTML/1_sem/physics.html"> Physics</a></li>
+              <li> <a href="/HTML/1_sem/maths.html"> Mathematics</a></li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+  <!-- fOOTER SECTION -->
+  <div id="footer"></div>
+  <script> 
+  $(function(){
+    $("#header").load("../../HTML/hf/header_sem_select.html"); 
+        $("#footer").load("../../HTML/hf/footer_sem_select.html"); 
+  });
+  </script>   
+     
+
+
+    
+   
+
+  </body>
+</html>

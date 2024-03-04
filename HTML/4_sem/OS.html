@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/header_footer.css">
+    <link rel="stylesheet" href="../../CSS/syllabus_subjects.css">
+    <title>  Operating Systems  Syllabus</title>
+</head>
+<body>
+    <!-- THis part contains the FOOTER of the page -->
+    <!-- COPY AND PASE THE PROVIDED CODE OF THE HEADER HEERE -->
+    
+    <!-- The header of the page -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <div id="header"></div>
+
+  <!-- tHE MAIN BODY -->
+  <!--Remaining section-->
+
+
+    <!-- Main Syllabus part of the page -->
+    <!-- EDIT THE CONTENTS OF THE PAGE HERE -->
+    <main>
+        <!-- The topbar of the page -->
+        <!-- Shows the image and the semester selected. -->
+        <section class="topfirst">
+            <!-- The leftside -->
+            <!-- CHANGE THE ANCHOR TAG BELOW ON EACH SEMESTER -->
+            <a href="../../SUBJECT_SELECTIONS/FIrst-sem.html"><h1><span class="textColor1">Fourth </span><span class="textColor2">Semester</span></h1></a>
+
+            <!-- the right image -->
+            <img src="../../Resources/svg/online_articles.svg" alt="Selction Image">
+
+        </section>
+
+         <!-- Main Subject's Name -->
+         <h1 class="s_name">Operating Systems </h1>
+        <!-- THe main syllabus -->
+        <section class="mainSyllabus">
+           
+
+            <!-- DIsplays the subjects credit, full marks, pass marks -->
+            <section class="topbar_syllabus">
+                <section class="syllabus_top_left">
+                    <p><b> Course Title:</b> Operating Systems </p>  
+                    <p><b> Course No.:</b> CSC259</p>  
+                    <p><b> Course Nature:</b> Theory + Lab</p>
+                    <p><b> Semester:</b> Fourth </p>
+                    <p><b> Year:</b> Second</p>
+    
+                </section>
+                <selection class="syllabus_top_right">
+                    <p><b> Full Marks: </b> 60 + 20 + 20</p>
+                    <p><b> Pass Marks: </b> 24 + 8 + 8 </p>
+                    <p><b> Credit Hours:</b> 3</p>
+                </selection>
+            </section>
+
+
+            <section>
+                <p><b> 
+                    Course Description:
+                </b> 
+                This course includes the basic concepts of operating system components. It consists of process management, deadlocks and process synchronization, memory management techniques, File system implementation, and I/O device management principles. It also includes case study on Linux operating system.                </p>
+
+                <p><b> 
+                    Course Objectives:    
+                </b> 
+                <ul>
+                    <li>Describe need and role of operating system.</li>
+                    <li>Understand OS components such a scheduler, memory manager, file system handlers and I/O device managers.</li>
+                    <li>Analyze and criticize techniques used in OS components</li>
+                    <li>Demonstrate and simulate algorithms used in OS components</li>
+                    <li>Identify algorithms and techniques used in different components of Linux Course</li>
+                </ul>
+                 </p>
+            </section>
+
+            <!-- Display the syllabus with the chapter's name and everything. -->
+            <section class="syllabus_table">
+                <table>
+                    <!-- The main heading for the table -->
+                    <tr>
+                        <th><h4>Contents of Chapter</h4></th>
+                    </tr>
+                    <!-- Add the row below in table as needed for chapters -->
+                    <!-- Unit-1 -->
+                    <tr>
+                        <td>
+                            <h4>Unit 1: Operating System Overview (4 Hrs.)</h4>
+
+
+                            <p>
+                                1.1 Introduction: Definition, Two views of operating system, Evolution/History of operating system, Types of OS (Mainframe, Server, Multiprocessor, PC, Real-Time, Embedded, Smart Card Operating Systems), Operating System Structures<br>
+                                1.2 System Calls: Definition, Handling System Calls, System calls for Process, File, and Directory Management, System Programs, The Shell, Open Source Operating Systems                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Unit-2-->
+                    <tr>
+                        <td>
+                            <h4>Unit 2: Process Management (10 Hrs.)</h4>
+
+
+                            <p>
+                                2.1 Introduction: Process vs Program, Multiprogramming, Process Model, Process States, Process Control Block/Process Table.<br>
+                                2.2 Threads: Definition, Thread vs Process, Thread Usage, User and Kernel Space Threads.<br>
+                                2.3 Inter Process Communication: Definition Race Condition, Critical Section<br>
+                                2.4 Implementing Mutual Exclusion: Mutual
+                                Exclusion with Busy Waiting (Disabling Interrupts, Lock Variables, Strict Alteration, Peterson’s Solution, Test and Set Lock), Sleep and Wakeup, Semaphore, Monitors, Message Passing<br>
+                                2.5 Classical           IPC     problems:          Producer
+                                Consumer, Sleeping Barber, and Dining Philosopher Problem<br>
+                                2.6 Process Scheduling: Goals, Batch System Scheduling (First-Come First-Served,
+                                Shortest Job First, Shortest Remaining Time Next), Interactive System Scheduling (Round-Robin Scheduling, Priority Scheduling, Multiple Queues), Overview of Real Time System Scheduling (No need to discuss any real time system scheduling algorithm)                            </p>
+                        </td>
+                    </tr>
+
+                     <!-- Unit-3-->
+                     <tr>
+                        <td>
+                            <h4>Unit 3: Process Deadlocks (6 Hrs.)</h4>
+
+
+                            <p>
+                                3.1 Introduction: Definition, Deadlock Characterization, Preemptable and NonPreemptable Resources, Resource Allocation Graph, Necessary Conditions for
+                                Deadlock<br>
+                                3.2 Handling Deadlocks: Ostrich Algorithm, Deadlock prevention, Safe and Unsafe States, Deadlock Avoidance (Bankers algorithm for Single and Multiple Resource Instances), ,
+                                Deadlock Detection (For Single and Multiple Resource Instances), Recovery From Deadlock (Through Preemption and
+                                Rollback)                            </p>
+                        </td>
+                    </tr>
+
+                     <!-- Unit-4-->
+                    <tr>
+                        <td>
+                            <h4>Unit 4: Memory Management (8 Hrs.)</h4>
+
+
+                            <p>
+                                4.1 Introduction: Monoprogramming vs Multiprogramming, Modelling Multiprogramming, Multiprogramming with fixed and variable partitions, Relocation and Protection.<br>
+                                4.2 Space Management: Fragmentation and Compaction, Memory management (Bitmaps & Linked-list), Memory Allocation
+                                Strategies<br>
+                                4.3 Virtual Memory: Paging, Page Table, Page Table Structure, Pages and Frames, Handling Page Faults, TLB’s<br>
+                                4.4  Page Replacement Algorithms: Hit Rate and Miss Rate, Concept of Locality of Reference, FIFO, Belady’s Anomaly, Second
+                                Chance, LRU, Optimal, LFU, Clock, WSClock.<br>
+                                4.5 Segmentation: Why Segmentation, Drawbacks of Segmentation, Segmentation with Paging(MULTICS)                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Unit-5-->
+                    <tr>
+                        <td>
+                            <h4>Unit 5: File Management (6) Hrs.)</h4>
+
+
+                            <p>
+                                5.1 File Overview: File Naming, File Structure,
+                                File Types, File Access, File Attributes, File Operations, Single Level, Two Level and Hierarchical Directory Systems, File System Layout.<br>
+                                5.2 Implementing Files: Contiguous allocation, Linked List Allocation, Linked List Allocation using Table in Memory/ File Allocation Table, Inodes.<br>
+                                5.3 Directory:            Directory             Operations,   Path
+                                Names, Directory Implementation, Shared
+                                Files<br>
+                                5.4 Free Space Management: Bitmaps, Linked
+                                List                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Unit-6-->
+                    <tr>
+                        <td>
+                            <h4>Unit 6: Device Management (6 Hrs.)</h4>
+
+
+                            <p>
+                                6.1 Introduction: Classification of IO devices, Controllers, Memory Mapped IO, DMA
+                                Operation, Interrupts<br>
+                                6.2 IO Handling: Goals of IO Software, Handling IO(Programmed IO, Interrupt Driven IO, IO using DMA), IO Software
+                                Layers (Interrupt Handlers, Device Drivers)<br>
+                                6.3 Disk Management: Disk Structure, Disk Scheduling (FCFS, SSTF, SCAN, CSCAN, LOOK, CLOOK), Disk Formatting (Cylinder
+                                Skew, Interleaving, Error handling), RAID                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Unit-7-->
+                    <tr>
+                        <td>
+                            <h4>Unit 7:  Linux Case Study (5 Hrs.)</h4>
+
+
+                            <p>
+                                7.1  History,   Kernel            Modules,             Process Management, Scheduling, Inter-process Communication, Memory Management, File System Management Approaches, Device Management Approaches.                            </p>
+                        </td>
+                    </tr>
+
+                     
+                    
+                </table>
+
+            </section>
+
+            
+            <!-- LAB WORKS, BOOKS, REFERENCE BOOKS -->
+            <section class="bottom_bar">
+                <!-- LAB WORKS SECTION -->
+                <section>
+                    <h3><b>
+                        Laboratory Works: 
+                    </b></h3>
+
+                    <p>
+                        The laboratory work includes solving problems in operating system. The lab work should include                    </p>
+<ol>
+    <li>Demonstration of basic Linux Commands </li>
+    <li>Process creation and termination, thread creation and termination</li>
+    <li>Simulation of IPC techniques </li>
+    <li>Simulation process Scheduling algorithms </li>
+    <li> Simulation of deadlock avoidance and deadlock detection algorithms </li>
+    <li>Simulation of page replacement algorithms</li>
+    <li>Simulation of File allocation techniques</li>
+    <li>Simulate free space management techniques 
+                 </li><li>Simulation of disk scheduling algorithms</li>
+</ol>
+                     
+                </section>
+
+                <!-- TEXT BOOKS SECTION -->
+                <section class="text_book">
+                    <h3><b>
+                        Text Books:
+                    </b></h3>
+                    <ol>
+                        <li>
+                            Modern Operating Systems: Andrew S. Tanenbaum, PH1 Publication,
+                            Third  edition, 2008                        </li>
+
+                         
+                    </ol>
+                </section>
+                
+                <!-- REFERENCE BOOKS -->
+                <section class="ref_book">
+                    <h3><b>
+                        Reference Books:
+                    </b></h3>
+                    <ol>
+                        <li>
+                            Abraham Silberschatz, Peter Baer Galvin and Greg Gagne, “Operating System Concepts”, John Wiley & Sons (ASIA) Pvt. Ltd, Seventh edition,
+                            2005.                          </li>
+
+                        <li>
+                            Harvey M. Deitel, Paul J. Deitel, and David R. Choffnes, “Operating Systems, Prentice Hall, Third edition, 2003.                         </li>
+                         
+                        
+                    </ol>
+                </section>
+            </section>
+        
+    </main>
+
+    <!-- THis part contains the FOOTER of the page -->
+    <!-- COPY AND PASE THE PROVIDED CODE OF THE FOOTER HEERE -->
+    <!-- fOOTER SECTION -->
+    
+    <div id="footer"></div>
+    <script> 
+    $(function(){
+    
+        $("#header").load("../../HTML/hf/header_sem_select.html"); 
+        $("#footer").load("../../HTML/hf/footer_sem_select.html"); 
+    });
+    </script> 
+</body>
+</html>

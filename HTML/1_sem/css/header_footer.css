@@ -1,0 +1,164 @@
+/* The CSs file for the header and footer */
+/* Organize the CSs using ABCSS and BLOCK ELEMENT MODIFIER(BEM) */
+
+/* Importing the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* The headers on flex */
+header{
+    display: flex;
+    font-size: 1.2em;
+    justify-content: space-between;
+    align-items: center;
+    margin:0.5em 0.7em;
+}
+
+header ol{
+    list-style-type:none;
+}
+
+nav li{
+    display: inline-block;
+    margin-inline: 0.5rem;
+    padding: 0 0.5em;
+}
+nav a{
+    color:#022B3A;
+    text-decoration:none;
+}
+nav a:hover{
+    color:#1F7A8C;
+    text-decoration: underline;
+    text-transform: scale(1);
+    transition:all 0.2s ease 0.02s;
+}
+header h3, .footer_details h3{
+    color: #022B3A;
+    font-family: 'Special Elite', cursive;
+}
+.header_search_bar input{
+    border-radius: 0.9em;
+    border:1px solid #1F7A8C;
+    height:2em;
+}   
+.header_search_bar button{
+    background-color: hsl(190, 64%, 34%);
+    border-radius: 1em;
+    border:none;
+    color:#fff;
+    font-family: inherit;
+    font-size: 0.8em;
+    padding: 0.3em 1em;
+    
+}
+.header_search_bar button:hover{
+    background-color: hsl(190, 64%, 34%,0.8);
+    color:black;
+  
+}
+
+/* CSS for the input field placeholder. */
+::placeholder{
+    font-family: inherit;
+    font-size: 1em;
+    opacity: 0.4;
+    padding:0.2em 1em;
+}
+
+/* ------Footer ------- */
+footer{
+    background-color: hsl(210, 78%, 86%,0.3);
+    display: grid;
+    gap:2em;
+    grid-template-columns:2fr 1fr 1fr 1.3fr;
+    margin-bottom: 0;
+    padding:0.5em 0.2em;
+    place-content: center;
+    
+}
+footer h3{
+    color:#022B3A;
+}
+
+/* First column of the footer */
+.footer_details{
+    margin-left: 5em;
+    text-align: justify;
+}
+/* SemesterLinks CSS */
+.sem_links a{
+    color: black;
+    text-decoration: none;
+}
+.sem_links a:hover{
+    color:#1F7A8C;
+    text-decoration: underline;
+    transition:all 0.2s ease 0.02s;
+}
+.sem_links p{   
+    padding: 0.3em 0;
+}
+
+/* The links section css */
+.links a{
+    color: black;
+    text-decoration: none;
+}
+.links a:hover{
+    color:#1F7A8C;
+    text-decoration: underline;
+    transition:all 0.2s ease 0.02s;
+}
+.links p{
+    padding: 0.3em 0;
+}
+
+
+/* Contact forum  */
+.contact_forum{
+    margin-right: 5em;
+}
+.contact_forum label{
+    display: block;
+    font-weight: bold;
+    padding: 0.3em 0; 
+}
+.contact_forum button{
+    background-color: hsl(190, 64%, 34%);
+    border-radius: 1em;
+    border:none;
+    color:white;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight:570;
+    margin-top:0.5em;
+    padding: 0.5em 0; 
+    width:50%;
+}
+.contact_forum button:hover{
+    background-color: hsl(190, 64%, 34%,0.8);
+    color: white;
+}
+.contact_forum input{
+    border-radius: 0.5em;
+    border:2px solid #1F7A8C;
+    width: 100%;
+    
+}
+.message_box{
+    height:5em;
+}
+
+
+
+/* Copyright Button CSS */
+.copyright{
+    background-color: hsl(210, 78%, 86%,0.5);
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin:0em 0;
+    padding:0.5em;
+    text-align: center;
+}
+

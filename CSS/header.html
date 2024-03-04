@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/header_footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- The logo -->
+        <figure>
+            <img src="logo.png" alt="Logo">
+        </figure>
+
+        <!-- THe hamburger of the 3 lines on the page -->
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- The navigation items -->
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">Syllabus</a></li>
+                <li><a href="">Notes</a></li>
+                <li><a href="">Subject Code</a></li>
+            </ul>
+        </nav>
+        
+       <aside class="sideButton">
+        <button class="contributeButton">Contribute</button>
+        <button class="contactButton">Talk to us</button>
+       </aside>
+       
+    </header>
+    <script>
+       hamburger = document.querySelector(".hamburger");
+       hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+       }
+    </script>
+</body>
+</html>

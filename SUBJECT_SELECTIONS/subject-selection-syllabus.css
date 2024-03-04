@@ -1,0 +1,118 @@
+main{
+  margin:5em;
+  
+}
+main img{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.semester-page-top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.semester-page-top > div {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.grades {
+  width: 257px;
+}
+
+.analysis {
+  width: 40%;
+  
+
+}
+
+.semester-page-main {
+  background-image: url("../sajiloCSIT/Resources/images/main_landing_color.jpg");
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.semester-page-main > div > ul > li {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  list-style: none;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: larger;
+  color: #022b3a;
+  background-color: #e1e5f2;
+}
+
+.choose-subjects {
+  padding-top: 3rem;
+}
+
+.choose,
+.subject {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.choose-subjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subject {
+  color: #1f7a8c;
+  margin: 8px;
+}
+
+.electives {
+  border: none;
+  color: #e1e5f2;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #1f7a8c;
+}
+
+.drop-down {
+  width: 15px;
+  margin: 2px;
+  fill: white;
+}
+
+.hide {
+  display: none;
+}
+
+#dropDownDisplay > ul > li {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  list-style: none;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: larger;
+  color: #022b3a;
+  background-color: #e1e5f2;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .grades{
+    display: none;
+
+  }
+  .semester-page-main{
+    flex-direction: column;
+  }
+  .analysis{
+    width: 80%;
+    margin-left: -15%;
+  }
+
+}

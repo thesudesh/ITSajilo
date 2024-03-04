@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap');
+
+
+:root{
+   --COLOR1:#022B3A;
+   --COLOR2: #1F7A8C;
+   --COLOR3: #BFDBF7;
+   --COLOR4: #E1E5F2;
+}
+/* Overriding the font styles 
+ */
+main{
+    text-align: justify;
+}
+main p, 
+.bottom_bar h3,
+.bottom_bar ol li,
+.syllabus_table ol li{
+    font-family: 'Montserrat', sans-serif;
+    padding:0.2rem;
+    
+}
+
+/* Removing all the decoration from the anchor tag */
+main a{
+    text-decoration: none;
+}
+.textColor1{
+    color: var(--COLOR1);
+}
+.textColor2{
+    color: var(--COLOR2);
+}
+
+main{
+    margin:4rem;
+}
+
+
+/* The topmost row that displays the image and the semester's name */
+.topfirst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    gap:15rem;
+    background: url("/Resources/svg/wave.svg");
+    background-size: cover;
+}
+.topfirst h1{
+    font-size: 3rem;
+}
+/* for the image */
+.topfirst img{
+    width:15%;
+    margin-left:3rem;
+}
+.s_name{
+    margin-bottom: 0.3rem;
+}
+
+/* ------Main SYllabus  */
+.mainSyllabus{
+    margin:10rem;
+    margin-top:0;
+    border:1px solid var(--COLOR1);
+    
+    padding:1em;
+    box-shadow:  3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.mainSyllabus ol{
+    list-style-type: decimal;
+    margin: 0 1rem;
+}
+.s_name{
+    text-align: center;
+}
+.mainSyllabus p{
+    /* font-size: 1.1rem; */
+    margin:0.1rem;
+    padding:0.1rem;
+}
+/* the top part that displays the name and marks, credits */
+.topbar_syllabus{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:28rem;
+    margin-bottom:1rem;
+}
+
+/* The syllabus table */
+.syllabus_table table{
+    border: 1px solid black ;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:1rem;
+    box-shadow:  3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.syllabus_table th h4{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+.syllabus_table th, td{
+    border:1px solid black;
+    padding:0.5rem;
+    
+}
+.syllabus_table td h4, .syllabus_table td p{
+    margin: 0.2rem;
+}
+
+.bottom_bar{
+    padding: 0.6rem;
+}
+.bottom_bar table{
+    width: 100%;
+}
+.text_book{
+    margin:1rem 0;
+}
+
+/* CSS for other screen size */
+@media screen and (max-width:1320px){
+    .mainSyllabus{
+        margin:3rem;
+    }
+}
+@media screen and (max-width:1100px){
+    
+    .mainSyllabus{
+        margin:0.5rem;
+    }
+}
+@media screen and (max-width:900px){
+
+    *{
+        margin:0;
+    }
+    /* the image on the topbar */
+    .topfirst{
+        display: block;
+    }
+    .topfirst img{
+        display: none;
+    }
+    .topfirst h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .s_name{
+        font-size: 1.5rem;
+    }
+    .topbar_syllabus{
+        flex-direction: column;
+        gap:1rem;
+        margin:0;
+    }
+    .mainSyllabus{
+        width:fit-content;
+        margin:0rem;
+    }
+    .syllabus_table table{
+        margin:0rem;
+        border: none;
+    }
+
+
+
+}
