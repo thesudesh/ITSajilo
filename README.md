@@ -12,3 +12,6 @@
 </ol>
 
 <strong> Note: </strong> All notes are not uploaded in github due to it's storage restriction. 
+
+## Link to the project:
+https://itsajilo.onrender.com/
